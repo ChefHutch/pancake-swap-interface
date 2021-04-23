@@ -16,6 +16,8 @@ if ('ethereum' in window) {
   (window.ethereum as any).autoRefreshOnNetworkChange = false
 }
 
+// 
+
 window.addEventListener('error', () => {
    localStorage?.removeItem('redux_localstorage_simple_lists')
 })
